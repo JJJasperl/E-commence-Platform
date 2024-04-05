@@ -1,0 +1,53 @@
+.shopcategory-indexSort{
+    display: flex;
+    margin: 0px auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+}
+.shopcategory-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+.shopcategory-indexSort p span{
+    font-weight: 600;
+}
+.shopcategory-products{
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+.shopcatrgory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+.shopcategory-search {
+    display: flex;
+    align-items: center;
+}
+.shopcategory-search input[type="text"] {
+    padding: 8px 20px;
+    margin-left: 20px; /* Space between sort options and search box */
+    border: 1px solid #888;
+    border-radius: 20px; /* Rounded corners for the input */
+    font-size: 16px;
+    outline: none; /* Removes the default focus outline */
+    width: 250px; /* Adjust based on your layout */
+    transition: border-color 0.2s ease-in-out;
+}
+.shopcategory-search input[type="text"]:focus {
+    border-color: #555; /* Darker border for focus state */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow on focus */
+}
