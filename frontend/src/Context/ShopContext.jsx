@@ -21,7 +21,6 @@ export const ShopContextProvider = ( props ) => {
     const [searchTerm, setSearchTerm] = useState('');
     const addToCart = (itemId) => {
         setCartItem((prev) => ({...prev, [itemId]:prev[itemId]+1}));
-        console.log(cartItems);
     }
     const removeFromCart = (itemId) => {
         setCartItem((prev) => ({...prev, [itemId]:prev[itemId]-1}));
@@ -35,7 +34,7 @@ export const ShopContextProvider = ( props ) => {
             }
             
         }
-        return totalAmount;
+        return totalAmount.toFixed(2);;
     }
     const getTotalCartItem = () => {
         let totalItem = 0;
