@@ -25,7 +25,7 @@ export const CartItems = () => {
                                 <p>{e.name}</p>
                                 <p>${e.new_price}</p>
                                 <button className='cartitems-quantity'>{cartItems[e.id]}</button>
-                                <p>${e.new_price*cartItems[e.id]}</p>
+                                <p>${(e.new_price*cartItems[e.id]).toFixed(2)}</p>
                                 <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}} alt="" />
                             </div>
                             <hr />
